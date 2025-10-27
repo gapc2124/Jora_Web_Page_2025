@@ -6,37 +6,31 @@
         <meta name="description" content="Jora Restaurant en Pachacámac: cocina campestre de autor, eventos y reservas." />
         <title>Jora Restaurant - Cocina Campestre de Autor</title>
 
-        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-        <!-- Styles -->
         <link rel="stylesheet" href="style.css" />
 
-        <!-- Scripts -->
         <script defer src="main.js"></script>
     </head>
     <body>
-        <!-- Header -->
         <header class="site-header">
             <div class="container header-inner">
             <a class="logo" href="#inicio" aria-label="Ir al inicio">
                 <img src="imagenes/JORALOGOMEJOR.png" alt="Jora Restaurant" width="260" height="76" />
             </a>
 
-            <!-- Nav centrado en desktop -->
             <nav id="primary-nav" class="primary-nav" aria-label="Navegación principal">
                 <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#platos">Platos</a></li>
                 <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#reserva">Reserva</a></li>
-                <li><a href="#tour">Tour</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="tour.html">Tour</a></li>
                 </ul>
             </nav>
 
-            <!-- Hamburguesa a la derecha -->
             <button class="menu-toggle"
                     aria-controls="primary-nav"
                     aria-expanded="false"
@@ -50,7 +44,6 @@
         </header>
 
         <main id="inicio">
-            <!-- HERO / CARRUSEL -->
             <section class="hero">
             <div class="carousel" role="region" aria-label="Carrusel de imágenes">
                 <div class="slides">
@@ -69,280 +62,269 @@
                     <div class="slide">
                         <img src="./imagenes/foto5.webp" alt="Zona de juegos y áreas verdes" loading="lazy" decoding="async">
                     </div>
-                    <div class="slide">
-                        <img src="./imagenes/foto6.webp" alt="Ambiente nocturno con luces cálidas" loading="lazy" decoding="async">
-                    </div>
                 </div>
 
 
-                <!-- Controles -->
                 <button class="prev" aria-label="Slide anterior" title="Anterior">❮</button>
                 <button class="next" aria-label="Slide siguiente" title="Siguiente">❯</button>
 
-                <!-- Dots -->
                 <div class="slider-dots" aria-label="Indicadores de carrusel" role="tablist"></div>
 
-                <!-- Dirección -->
                 <address class="hero-address">
-                <strong>Pachacámac, Lima</strong><br>
-                C. 8 Lt 37, Pachacamac 15823<br>
-                <a href="#reserva">Reservar ahora</a>
+                    <span class="address-line">C. 8 Lt 37, Pachacamac 15823</span><br>
+                    <a href="https://maps.app.goo.gl/1N38ejmfC8MJ4Jpj9" target="_blank" rel="noopener noreferrer">Ubícanos</a>
                 </address>
             </div>
             </section>
 
-            <!-- =========================
-            Platos Bandera (texto izq + fotos 2x2 der)
-            ========================= -->
-        <section id="platos" class="section platos-banner">
-            <div class="container platos-layout">
-                <!-- Columna izquierda -->
-                <div class="platos-texto">
-                    <h2>Platos Bandera</h2>
-                    <p class="section-desc">
-                        Nuestra gastronomía peruana inspira a <strong>Jora Restaurante</strong> a innovar con los sabores más reconocidos del país, 
-                        aportando el toque especial del chef para que cada preparación sea una experiencia única. 
-                        Cuidamos cada detalle —sabor, técnica y presentación— para celebrar la riqueza del Perú en un estilo campestre y moderno.
-                    </p>
+            <section id="platos" class="section dual-focus-section">
+                <div class="container container-wide">
 
-                    <ul class="platos-opciones">
-                        <li><a href="#fondos" data-target="1">Fondos</a></li>
-                        <li><a href="#bebidas" data-target="2">Bebidas</a></li>
-                        <li><a href="#postres" data-target="3">Postres</a></li>
-                        <li><a href="#entradas" data-target="4">Entradas</a></li>
-                    </ul>
-                </div>
+                    <div class="dual-layout-container">
 
-                <!-- Columna derecha: matriz 2x2 -->
-                <div class="platos-fotos">
-                    <figure class="pb" data-id="1">
-                        <img src="./imagenes/plato_bandera_1.webp" alt="Plato bandera 1" loading="lazy" decoding="async">
-                    </figure>
-                    <figure class="pb" data-id="2">
-                        <img src="./imagenes/plato_bandera_2.webp" alt="Plato bandera 2" loading="lazy" decoding="async">
-                    </figure>
-                    <figure class="pb" data-id="3">
-                        <img src="./imagenes/plato_bandera_3.webp" alt="Plato bandera 3" loading="lazy" decoding="async">
-                    </figure>
-                    <figure class="pb" data-id="4">
-                        <img src="./imagenes/plato_bandera_4.webp" alt="Plato bandera 4" loading="lazy" decoding="async">
-                    </figure>
-                </div>
-            </div>
-        </section>
+                        <div class="dual-card card-platos">
+
+                            <div class="platos-texto">
+                                <h2>Platos Bandera</h2>
+                                <p class="section-desc">
+                                    Sabor a leña y tierra de nuestro valle. Reinterpretamos la cocina campestre con ingredientes frescos y locales.
+                                </p>
+                                <ul class="platos-opciones">
+                                    <li><a href="#fondos" data-target="1">Fondos</a></li>
+                                    <li><a href="#bebidas" data-target="2">Bebidas</a></li>
+                                    <li><a href="#postres" data-target="3">Postres</a></li>
+                                    <li><a href="#entradas" data-target="4">Entradas</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="platos-fotos">
+                                <figure class="pb" data-id="1">
+                                    <img src="./imagenes/plato_bandera_1.webp" alt="Plato bandera 1" loading="lazy" decoding="async">
+                                </figure>
+                                <figure class="pb" data-id="2">
+                                    <img src="./imagenes/plato_bandera_2.webp" alt="Plato bandera 2" loading="lazy" decoding="async">
+                                </figure>
+                                <figure class="pb" data-id="3">
+                                    <img src="./imagenes/plato_bandera_3.webp" alt="Plato bandera 3" loading="lazy" decoding="async">
+                                </figure>
+                                <figure class="pb" data-id="4">
+                                    <img src="./imagenes/plato_bandera_4.webp" alt="Plato bandera 4" loading="lazy" decoding="async">
+                                </figure>
+                            </div>
+
+                        </div> <div class="dual-card card-eventos">
+                            <div class="cta-imagen">
+                                <img src="./imagenes/wedding1.webp" alt="Boda elegante en los jardines de Jora Restaurant">
+                            </div>
+
+                            <div class="cta-texto">
+                                <h2 class="cta-titulo">El Escenario Perfecto</h2>
+                                <p class="cta-desc">
+                                    Imagina tu boda, cumpleaños o reunión corporativa con la naturaleza como telón de fondo.
+                                </p>
+                                <a href="#eventos" class="btn-cta">Cotizar mi Evento</a>
+                            </div>
+                        </div> </div> </div>
+            </section>
 
 
-    <!-- ===================== -->
-    <!--  Eventos privados     -->
-    <!-- ===================== -->
         <section id="eventos" class="section eventos-scroll">
-        <div class="container">
-            <header class="ev-intro">
-            <h2 class="eventos-title">Eventos privados</h2>
-            <p class="section-desc">
-                Naturaleza, espacios versátiles y gastronomía de autor para celebrar como te lo imaginas.
-            </p>
-            </header>
+            <div class="container">
+                <header class="ev-intro">
+                     <div class="ev-intro-heading-group">
+                        <h2 class="eventos-title">Eventos Privados</h2>
+                        <div class="eventos-subheading-box">
+                            <span class="eventos-subheading-text">Conoce más</span>
+                        </div>
+                    </div>
+                     <nav class="eventos-nav" aria-label="Tipos de eventos">
+                        <a href="#evento-bodas" class="btn-evento-nav">Bodas</a>
+                        <a href="#evento-fiestas" class="btn-evento-nav">Fiestas Privadas</a>
+                        <a href="#evento-sociocultural" class="btn-evento-nav">Sociocultural</a>
+                        <a href="#evento-corporativo" class="btn-evento-nav">Corporativo</a>
+                    </nav>
+                </header>
+                <article class="ev-block" id="evento-fiestas">
+                    <div class="ev-media">
+                         <div class="ev-collage">
+                            <img src="./imagenes/flores.webp" alt="Decoración floral para fiestas">
+                            <img src="./imagenes/fiestaprivada1.webp" alt="Fiesta privada con amigos">
+                        </div>
+                    </div>
+                    <div class="ev-copy">
+                        <h3>Fiestas privadas</h3>
+                        <p>
+                        Celebra con barra, pista y decoración temática. Nosotros nos encargamos de la
+                        experiencia; tú de disfrutar.
+                        </p>
+                        <ul class="ev-list">
+                        <li>Elige el tema</li>
+                        <li>Decoración temática</li>
+                        <li>Bebidas y coctelería</li>
+                        <li>Cumpleaños, Aniversarios, Festejos y más</li>
+                        </ul>
+                    </div>
+                </article>
 
-            <!-- 3. Cumpleaños / Fiestas privadas -->
-            <article class="ev-block">
-            <div class="ev-media">
-                <img src="./imagenes/fiestaprivada1.png" alt="Fiesta privada con amigos">
-            </div>
-            <div class="ev-copy">
-                <h3>Fiestas privadas</h3>
-                <p>
-                Celebra con barra, pista y decoración temática. Nosotros nos encargamos de la
-                experiencia; tú de disfrutar.
-                </p>
-                <ul class="ev-list">
-                <li>Elige el tema</li>
-                <li>Decoración temática</li>
-                <li>Bebidas y coctelería</li>
-                <li>Cumpleaños, Aniversarios, Festejos y más</li>
-                </ul>
-            </div>
-            </article>
+                <article class="ev-block" id="evento-bodas">
+                    <div class="ev-media">
+                        <div class="ev-collage">
+                            <img src="./imagenes/wedding1.webp" alt="Novios en jardines de Jora">
+                            <img src="./imagenes/wedding2.webp" alt="Sesión de novios en exteriores">
+                        </div>
+                    </div>
+                    <div class="ev-copy">
+                        <h3>Bodas</h3>
+                         <p>
+                        Escenarios campestres, fotos de ensueño y cocina de autor para su historia.
+                        Desde el altar en jardines hasta el banquete principal.
+                        </p>
+                        <ul class="ev-list">
+                        <li>Prueba de menú</li>
+                        <li>Ruta de ingreso y altar</li>
+                        <li>Ambientación rústico-elegante</li>
+                        </ul>
+                        <div class="ev-mini-gallery">
+                        <img src="./imagenes/wedding3.webp" alt="Mesa y ambientación para boda">
+                        </div>
+                    </div>
+                </article>
 
-                        <!-- 4. Bodas y aniversarios (con mini-galería) -->
-            <article class="ev-block">
-            <div class="ev-media">
-                <div class="ev-collage">
-                <img src="./imagenes/wedding1.jpg" alt="Novios en jardines de Jora">
-                <img src="./imagenes/wedding2.jpg" alt="Sesión de novios en exteriores">
-                </div>
-            </div>
-            <div class="ev-copy">
-                <h3>Bodas</h3>
-                <p>
-                Escenarios campestres, fotos de ensueño y cocina de autor para su historia.
-                Desde el altar en jardines hasta el banquete principal.
-                </p>
-                <ul class="ev-list">
-                <li>Prueba de menú</li>
-                <li>Ruta de ingreso y altar</li>
-                <li>Ambientación rústico-elegante</li>
-                </ul>
-                <div class="ev-mini-gallery">
-                <img src="./imagenes/wedding3.jpg" alt="Mesa y ambientación para boda">
-                </div>
-            </div>
-            </article>
+                <article class="ev-block" id="evento-sociocultural">
+                    <div class="ev-media">
+                         <div class="ev-collage">
+                             <img src="./imagenes/petfriendly.webp" alt="Evento social al aire libre">
+                             <img src="./imagenes/sociocultural1.webp" alt="Encuentro sociocultural en jardines de Jora">
+                        </div>
+                    </div>
+                    <div class="ev-copy">
+                        <h3>Social y cultural</h3>
+                         <p>
+                        Reuniones al aire libre con identidad peruana: arte, cultura y música en
+                        ambientes que inspiran. Montaje tipo cóctel, auditorio o banquete.
+                        </p>
+                        <ul class="ev-list">
+                        <li>Áreas verdes y terraza</li>
+                        <li>Sonido y música en vivo</li>
+                        <li>Menús por estaciones o servidos</li>
+                        </ul>
+                    </div>
+                </article>
 
-            <!-- 1. Social y cultural -->
-            <article class="ev-block">
-            <div class="ev-media">
-                <img src="./imagenes/sociocultural1.png" alt="Encuentro sociocultural en jardines de Jora">
-            </div>
-            <div class="ev-copy">
-                <h3>Social y cultural</h3>
-                <p>
-                Reuniones al aire libre con identidad peruana: arte, cultura y música en
-                ambientes que inspiran. Montaje tipo cóctel, auditorio o banquete.
-                </p>
-                <ul class="ev-list">
-                <li>Áreas verdes y terraza</li>
-                <li>Sonido y música en vivo</li>
-                <li>Menús por estaciones o servidos</li>
-                </ul>
-            </div>
-            </article>
+                <article class="ev-block" id="evento-corporativo">
+                    <div class="ev-media">
+                        <img src="./imagenes/evento1.webp" alt="Dinámicas grupales corporativas">
+                    </div>
+                    <div class="ev-copy">
+                        <h3>Corporativo</h3>
+                         <p>
+                        Kickoffs, team-building y almuerzos ejecutivos con el equilibrio perfecto entre
+                        naturaleza y enfoque profesional.
+                        </p>
+                        <ul class="ev-list">
+                        <li>Presentaciones y workshops</li>
+                        <li>Coffee breaks campestres</li>
+                        <li>Montaje a medida</li>
+                        </ul>
+                    </div>
+                </article>
 
-            <!-- 2. Corporativo -->
-            <article class="ev-block">
-            <div class="ev-media">
-                <img src="./imagenes/evento1.png" alt="Dinámicas grupales corporativas">
             </div>
-            <div class="ev-copy">
-                <h3>Corporativo</h3>
-                <p>
-                Kickoffs, team-building y almuerzos ejecutivos con el equilibrio perfecto entre
-                naturaleza y enfoque profesional.
-                </p>
-                <ul class="ev-list">
-                <li>Presentaciones y workshops</li>
-                <li>Coffee breaks campestres</li>
-                <li>Montaje a medida</li>
-                </ul>
-            </div>
-            </article>
-
-            <!-- 5. Pet-friendly (con mini-galería) -->
-            <article class="ev-block">
-            <div class="ev-media">
-                <div class="ev-collage">
-                <img src="./imagenes/petfriendly.jpg" alt="Invitado con su mascota en áreas verdes">
-                <img src="./imagenes/petfriendly2.jpg" alt="Sesión familiar con perro en Jora">
-                </div>
-            </div>
-            <div class="ev-copy">
-                <h3>Pet-friendly</h3>
-                <p>
-                Tu engreído es parte de la familia. Espacios seguros, bowls y zonas con sombra
-                para disfrutar todos juntos.
-                </p>
-                <ul class="ev-list">
-                <li>Puntos de agua</li>
-                <li>Áreas fotogénicas</li>
-                <li>Recomendaciones BARF bajo demanda</li>
-                </ul>
-            </div>
-            </article>
-        </div>
         </section>
-            <!-- Reserva -->
-        <!-- =========================
-        SECCIÓN DE RESERVA
-        ========================= -->
+
         <section id="reserva" class="section reserva">
             <div class="container">
                 <h2 class="reserva-title">Reserva</h2>
                 <p class="reserva-desc">
-                Elige la forma más cómoda de hacer tu reserva y asegura tu experiencia campestre.
+                Reserva a tu manera mediante:
                 </p>
 
                 <div class="reserva-opciones">
-                <!-- WhatsApp -->
-                <a href="https://wa.me/51970278305" target="_blank" class="reserva-card">
-                    <div class="reserva-icon">💬</div>
-                    <h3>Reserva por WhatsApp</h3>
-                    <p>Chatea directamente con nuestro equipo y obtén confirmación inmediata.</p>
+                <a href="https://wa.me/51970278305" target="_blank" class="reserva-card reserva-card-simple">
+                    <img src="./imagenes/escribenos.webp" alt="" class="reserva-icon-img">
+                    <h3>WhatsApp</h3>
                 </a>
 
-                <!-- Formulario -->
-                <a href="#formulario-reserva" class="reserva-card">
-                    <div class="reserva-icon">📝</div>
-                    <h3>Llena el Formulario</h3>
-                    <p>Déjanos tus datos y detalles de tu visita; te responderemos en breve.</p>
+                <a href="#formulario-reserva" class="reserva-card reserva-card-simple">
+                    <img src="./imagenes/formulario.webp" alt="" class="reserva-icon-img">
+                    <h3>Formulario</h3>
                 </a>
 
-                <!-- Llamada -->
-                <a href="tel:+51970278305" class="reserva-card">
-                    <div class="reserva-icon">📞</div>
+                <a href="tel:+51970278305" class="reserva-card reserva-card-simple">
+                    <img src="./imagenes/llamanos.webp" alt="" class="reserva-icon-img">
                     <h3>Llámanos</h3>
-                    <p>Prefieres hablar directamente? Nuestro equipo está listo para atenderte.</p>
                 </a>
                 </div>
             </div>
         </section>
 
-        <!-- =========================
-        FOOTER JORA
-        ========================= -->
-    <footer class="site-footer-dark">
-        <div class="container footer-grid">
-            <!-- Columna 1: Descripción -->
-            <div class="footer-info">
-            <img src="./imagenes/JORALOGOMEJOR.png" alt="Jora Restaurant" class="footer-logo">
-            <p>
-                <strong>Jora Restaurante Campestre</strong> es un espacio donde la gastronomía peruana 
-                se fusiona con la naturaleza para ofrecer experiencias únicas. Ideal para familias, 
-                empresas y celebraciones especiales.
-            </p>
+        <footer class="site-footer-dark">
+            <div class="container footer-grid">
+                <div class="footer-info">
+                <img src="./imagenes/JORALOGOMEJOR.png" alt="Jora Restaurant" class="footer-logo"> <p>
+                    <strong>Jora Restaurante Campestre</strong> es un espacio donde la gastronomía peruana
+                    se fusiona con la naturaleza para ofrecer experiencias únicas. Ideal para familias,
+                    empresas y celebraciones especiales.
+                </p>
 
-            <h4>Contáctanos</h4>
-            <p class="footer-contact">
-                <a href="https://wa.me/51970278305" target="_blank" rel="noopener">
-                <span class="icon">💬</span> +51 970 278 305
-                </a><br>
-                <a href="mailto:reservas@jorarestaurante.com">
-                <span class="icon">📧</span> reservas@jorarestaurante.com
-                </a>
-            </p>
+                <h4>Contáctanos</h4>
+                <p class="footer-contact">
+                    <a href="https://wa.me/51970278305" target="_blank" rel="noopener">
+                    <span class="icon">💬</span> +51 970 278 305
+                    </a><br>
+                    <a href="mailto:reservas@jorarestaurante.com">
+                    <span class="icon">📧</span> reservas@jorarestaurante.com
+                    </a>
+                </p>
 
-            <h4>Síguenos</h4>
-            <div class="footer-social">
-                <a href="#" aria-label="TikTok"><img src="./imagenes/tiktok.png" alt="TikTok"></a>
-                <a href="#" aria-label="Instagram"><img src="./imagenes/ig.png" alt="Instagram"></a>
-                <a href="#" aria-label="YouTube"><img src="./imagenes/youtube.png" alt="YouTube"></a>
-            </div>
-            </div>
+                <h4>Síguenos</h4>
+                <div class="footer-social">
+                    <a href="#" aria-label="TikTok"><img src="./imagenes/tiktok.webp" alt="TikTok"></a>
+                    <a href="#" aria-label="Instagram"><img src="./imagenes/ig.webp" alt="Instagram"></a>
+                    <a href="#" aria-label="YouTube"><img src="./imagenes/youtube.webp" alt="YouTube"></a>
+                </div>
+                </div>
 
-            <!-- Columna 2: Navegación -->
-            <div class="footer-nav">
-            <h4>Explora</h4>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#platos">Restaurante</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#reserva">Reserva</a></li>
-                <li><a href="#tour">Tour</a></li>
-            </ul>
-            <ul class="footer-legal">
-                <li><a href="#">Términos y Condiciones</a></li>
-                <li><a href="#">Política de Privacidad</a></li>
-                <li><a href="#">Libro de Reclamaciones</a></li>
-            </ul>
-            </div>
-        </div>
+                <div class="footer-nav">
+                <h4>Explora</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#platos">Restaurante</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="reserva.html">Reserva</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                </ul>
+                <ul class="footer-legal">
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li>
+                        <a href="#">Libro de Reclamaciones</a>
+                        <img src="./imagenes/librodereclamaciones.webp" alt="Libro de Reclamaciones" class="footer-libro">
+                    </li>
+                </ul>
+                </div>
 
-    <!-- Franja inferior -->
-        <div class="footer-bottom">
-            <p>© <span id="year"></span> Jora Restaurant. Todos los derechos reservados.</p>
-            <img src="./imagenes/librodereclamaciones.png" alt="Libro de Reclamaciones" class="footer-libro">
-        </div>
-    </footer>
-
-    </body>
+                <div class="footer-contact-form">
+                    <h4>Contáctanos</h4>
+                    <form action="#" method="post"> <div class="form-group">
+                            <label for="footer-name">Nombre:</label>
+                            <input type="text" id="footer-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="footer-email">Correo:</label>
+                            <input type="email" id="footer-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="footer-message">Mensaje:</label>
+                            <textarea id="footer-message" name="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-footer-submit">Enviar</button>
+                    </form>
+                </div>
+                </div> <div class="footer-bottom">
+                <p>© <span id="year"></span> Jora Restaurant. Todos los derechos reservados.</p>
+                </div>
+        </footer>
+        </main> </body>
 </html>
