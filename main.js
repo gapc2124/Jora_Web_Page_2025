@@ -231,29 +231,28 @@ const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
   onResize();
 })();
 
-/* Revela bloques de eventos al hacer scroll */
-(function revealOnScroll(){
-  const blocks = document.querySelectorAll('.ev-block');
-  if (!blocks.length) return;
+/* =========================
+   REVISADO: Transición de Fondo al Hacer Scroll (Eventos)
+   ========================= */
+(function backgroundFadeOnScroll(){
+  const blocks = $$('.ev-block');
+  // CAMBIO CLAVE: Selecciona .ev-intro en lugar de .ev-intro-heading-group
+  const headerGroup = $('.ev-intro'); 
+  const elementsToObserve = headerGroup ? [...blocks, headerGroup] : blocks; 
+
+  if (!elementsToObserve.length) return;
 
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{
       if(e.isIntersecting){
-        e.target.classList.add('in-view');
-        io.unobserve(e.target);
+        e.target.classList.add('bg-visible'); 
+        io.unobserve(e.target); 
       }
     });
-  }, {threshold: 0.15});
+  }, { threshold: 0.15 });
 
-  blocks.forEach(b=>{
-    b.style.opacity = 0;
-    b.style.transform = 'translateY(14px)';
-    io.observe(b);
+  elementsToObserve.forEach(el => {
+     io.observe(el);
   });
 
-  const css = document.createElement('style');
-  css.textContent = `
-    .ev-block.in-view{ opacity:1 !important; transform:none !important; transition:opacity .5s ease, transform .5s ease; }
-  `;
-  document.head.appendChild(css);
 })();
