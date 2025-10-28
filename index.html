@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styles/style.css" />
 
         <script defer src="main.js"></script>
     </head>
@@ -17,7 +17,7 @@
         <header class="site-header">
             <div class="container header-inner">
             <a class="logo" href="#inicio" aria-label="Ir al inicio">
-                <img src="imagenes/JORALOGOMEJOR.png" alt="Jora Restaurant" width="260" height="76" />
+                <img src="imagenes/JORALOGOMEJOR.webp" alt="Jora Restaurant" width="260" height="76" />
             </a>
 
             <nav id="primary-nav" class="primary-nav" aria-label="Navegación principal">
@@ -26,7 +26,7 @@
                 <li><a href="#platos">Platos</a></li>
                 <li><a href="#eventos">Eventos</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="Reserva.html">Reserva</a></li>
                 <li><a href="tour.html">Tour</a></li>
                 </ul>
             </nav>
@@ -90,10 +90,13 @@
                                     Sabor a leña y tierra de nuestro valle. Reinterpretamos la cocina campestre con ingredientes frescos y locales.
                                 </p>
                                 <ul class="platos-opciones">
-                                    <li><a href="#fondos" data-target="1">Fondos</a></li>
-                                    <li><a href="#bebidas" data-target="2">Bebidas</a></li>
-                                    <li><a href="#postres" data-target="3">Postres</a></li>
-                                    <li><a href="#entradas" data-target="4">Entradas</a></li>
+                                    <li class="opcion-descargar">
+                                        <a href="./archivos/CARTA.pdf" download>Descargar Carta</a>
+                                    </li>
+                                    <li><a href="fondos.html" data-target="1">Fondos</a></li>
+                                    <li><a href="bebidas.html" data-target="2">Bebidas</a></li>
+                                    <li><a href="postres.html" data-target="3">Postres</a></li>
+                                    <li><a href="entradas.html" data-target="4">Entradas</a></li>
                                 </ul>
                             </div>
 
@@ -122,7 +125,7 @@
                                 <p class="cta-desc">
                                     Imagina tu boda, cumpleaños o reunión corporativa con la naturaleza como telón de fondo.
                                 </p>
-                                <a href="#eventos" class="btn-cta">Cotizar mi Evento</a>
+                                <a href="cotizar_evento.html" class="btn-cta">Cotizar mi Evento</a>
                             </div>
                         </div> </div> </div>
             </section>
@@ -131,24 +134,26 @@
         <section id="eventos" class="section eventos-scroll">
             <div class="container">
                 <header class="ev-intro">
-                     <div class="ev-intro-heading-group">
+                    <div class="ev-intro-heading-group">
                         <h2 class="eventos-title">Eventos Privados</h2>
+                        <nav class="eventos-nav" aria-label="Tipos de eventos">
+                            <a href="#evento-bodas" class="btn-evento-nav">Bodas</a>
+                            <a href="#evento-fiestas" class="btn-evento-nav">Fiestas Privadas</a>
+                            <a href="#evento-sociocultural" class="btn-evento-nav">Sociocultural</a>
+                            <a href="#evento-corporativo" class="btn-evento-nav">Corporativo</a>
+                        </nav>
                         <div class="eventos-subheading-box">
                             <span class="eventos-subheading-text">Conoce más</span>
                         </div>
                     </div>
-                     <nav class="eventos-nav" aria-label="Tipos de eventos">
-                        <a href="#evento-bodas" class="btn-evento-nav">Bodas</a>
-                        <a href="#evento-fiestas" class="btn-evento-nav">Fiestas Privadas</a>
-                        <a href="#evento-sociocultural" class="btn-evento-nav">Sociocultural</a>
-                        <a href="#evento-corporativo" class="btn-evento-nav">Corporativo</a>
-                    </nav>
                 </header>
+
                 <article class="ev-block" id="evento-fiestas">
-                    <div class="ev-media">
-                         <div class="ev-collage">
-                            <img src="./imagenes/flores.webp" alt="Decoración floral para fiestas">
-                            <img src="./imagenes/fiestaprivada1.webp" alt="Fiesta privada con amigos">
+                    <div class="ev-media layout-vert-horiz">
+                        <img src="./imagenes/flores.webp" alt="Fiesta privada principal vertical" class="img-vert">
+                        <div class="img-horiz-stack">
+                            <img src="./imagenes/fiestaprivada1.webp" alt="Decoración floral fiesta">
+                            <img src="./imagenes/fiestaprivada2.webp" alt="Detalle fiesta 2">
                         </div>
                     </div>
                     <div class="ev-copy">
@@ -167,10 +172,11 @@
                 </article>
 
                 <article class="ev-block" id="evento-bodas">
-                    <div class="ev-media">
-                        <div class="ev-collage">
-                            <img src="./imagenes/wedding1.webp" alt="Novios en jardines de Jora">
-                            <img src="./imagenes/wedding2.webp" alt="Sesión de novios en exteriores">
+                     <div class="ev-media layout-vert-horiz">
+                        <img src="./imagenes/wedding2.webp" alt="Sesión novios exterior vertical" class="img-vert">
+                        <div class="img-horiz-stack">
+                            <img src="./imagenes/wedding1.webp" alt="Novios en jardines">
+                            <img src="./imagenes/wedding3.webp" alt="Mesa y ambientación boda">
                         </div>
                     </div>
                     <div class="ev-copy">
@@ -184,18 +190,12 @@
                         <li>Ruta de ingreso y altar</li>
                         <li>Ambientación rústico-elegante</li>
                         </ul>
-                        <div class="ev-mini-gallery">
-                        <img src="./imagenes/wedding3.webp" alt="Mesa y ambientación para boda">
-                        </div>
                     </div>
                 </article>
 
                 <article class="ev-block" id="evento-sociocultural">
-                    <div class="ev-media">
-                         <div class="ev-collage">
-                             <img src="./imagenes/petfriendly.webp" alt="Evento social al aire libre">
-                             <img src="./imagenes/sociocultural1.webp" alt="Encuentro sociocultural en jardines de Jora">
-                        </div>
+                    <div class="ev-media layout-horiz-stack-only"> <img src="./imagenes/sociocultural1.webp" alt="Encuentro sociocultural principal" class="img-horiz-elongated">
+                         <img src="./imagenes/petfriendly.webp" alt="Evento social detalle" class="img-horiz-elongated">
                     </div>
                     <div class="ev-copy">
                         <h3>Social y cultural</h3>
@@ -212,8 +212,12 @@
                 </article>
 
                 <article class="ev-block" id="evento-corporativo">
-                    <div class="ev-media">
-                        <img src="./imagenes/evento1.webp" alt="Dinámicas grupales corporativas">
+                    <div class="ev-media layout-vert-horiz">
+                        <img src="./imagenes/corporativo3.webp" alt="Evento corporativo principal vertical" class="img-vert">
+                        <div class="img-horiz-stack">
+                             <img src="./imagenes/corporativo2.webp" alt="Evento corporativo detalle 1">
+                             <img src="./imagenes/evento1.webp" alt="Evento corporativo detalle 2">
+                        </div>
                     </div>
                     <div class="ev-copy">
                         <h3>Corporativo</h3>
@@ -245,7 +249,7 @@
                     <h3>WhatsApp</h3>
                 </a>
 
-                <a href="#formulario-reserva" class="reserva-card reserva-card-simple">
+                <a href="cotizar_evento.html" class="reserva-card reserva-card-simple">
                     <img src="./imagenes/formulario.webp" alt="" class="reserva-icon-img">
                     <h3>Formulario</h3>
                 </a>
@@ -261,7 +265,8 @@
         <footer class="site-footer-dark">
             <div class="container footer-grid">
                 <div class="footer-info">
-                <img src="./imagenes/JORALOGOMEJOR.png" alt="Jora Restaurant" class="footer-logo"> <p>
+                <img src="./imagenes/JORALOGOMEJOR.webp" alt="Jora Restaurant" class="footer-logo">
+                <p>
                     <strong>Jora Restaurante Campestre</strong> es un espacio donde la gastronomía peruana
                     se fusiona con la naturaleza para ofrecer experiencias únicas. Ideal para familias,
                     empresas y celebraciones especiales.
@@ -292,7 +297,7 @@
                     <li><a href="#platos">Restaurante</a></li>
                     <li><a href="#eventos">Eventos</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="reserva.html">Reserva</a></li>
+                    <li><a href="Reserva.html">Reserva</a></li>
                     <li><a href="tour.html">Tour</a></li>
                 </ul>
                 <ul class="footer-legal">
@@ -307,7 +312,8 @@
 
                 <div class="footer-contact-form">
                     <h4>Contáctanos</h4>
-                    <form action="#" method="post"> <div class="form-group">
+                    <form action="#" method="post">
+                        <div class="form-group">
                             <label for="footer-name">Nombre:</label>
                             <input type="text" id="footer-name" name="name" required>
                         </div>
@@ -322,9 +328,10 @@
                         <button type="submit" class="btn-footer-submit">Enviar</button>
                     </form>
                 </div>
-                </div> <div class="footer-bottom">
+
+            </div> <div class="footer-bottom">
                 <p>© <span id="year"></span> Jora Restaurant. Todos los derechos reservados.</p>
-                </div>
+            </div>
         </footer>
         </main> </body>
 </html>
